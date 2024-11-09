@@ -101,8 +101,8 @@ The document is constantly updated in real-time, with changes being reflected in
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── TextEditor.js     # Component for the text editor <br>
        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.js          # React entry point <br>
   &nbsp;/server <br>
-    &nbsp;&nbsp;&nbsp;├── Document.js          # Mongoose model for documents <br>
-    &nbsp;&nbsp;&nbsp;├── server.js            # Express server and Socket.IO setup <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Document.js          # Mongoose model for documents <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── server.js            # Express server and Socket.IO setup <br>
   /package.json               # Project dependencies <br>
 
 ## API Routes
