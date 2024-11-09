@@ -94,9 +94,9 @@ The document is constantly updated in real-time, with changes being reflected in
 ## File Structure
 
 /collabwrite <br>
-  /client <br>
+&nbsp;/client <br>
     &nbsp; ├── public/ <br>
-    └── src/ <br>
+    &nbsp;&nbsp;└── src/ <br>
      &nbsp;&nbsp;   ├── App.js           # Main React component  <br>
       &nbsp;&nbsp;  ├── TextEditor.js     # Component for the text editor <br>
        &nbsp;&nbsp; └── index.js          # React entry point <br>
