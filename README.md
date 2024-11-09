@@ -49,3 +49,4 @@ Navigate to the frontend directory and install dependencies:
 cd client
 npm install
 ```
+3. Start the frontend: npm run dev
