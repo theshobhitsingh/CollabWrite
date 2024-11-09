@@ -30,6 +30,7 @@
 git clone https://github.com/yourusername/collabwrite.git
 cd collabwrite
 ```
+
 ### 2. Set up the backend
 
 1. Navigate to the backend directory and install dependencies:
@@ -49,6 +50,7 @@ Navigate to the frontend directory and install dependencies:
 cd client
 npm install
 ```
+
 3. Start the frontend: npm run dev
 
 4. The frontend will start on http://localhost:5173.
@@ -60,6 +62,7 @@ mongoose.connect("mongodb://localhost/collabwrite", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
+
 You can change this URL to point to your MongoDB instance if it's hosted elsewhere.
 
 ## How It Works ?
