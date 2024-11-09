@@ -96,3 +96,22 @@ The document is constantly updated in real-time, with changes being reflected in
     ├── Document.js          # Mongoose model for documents
     ├── server.js            # Express server and Socket.IO setup
   /package.json               # Project dependencies
+
+
+## API Routes
+GET /documents/
+: Fetches the document data by ID.
+POST /documents/
+/save: Saves the document data to the database.
+Socket.IO Events
+get-document: Requests the current document data.
+load-document: Sends the document data to the client.
+send-changes: Sends document changes to the server.
+receive-changes: Broadcasts document changes to other users.
+save-document: Saves the document data to the database.
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/your-feature).
+Create a new Pull Request.
