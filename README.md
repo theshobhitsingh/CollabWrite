@@ -95,11 +95,11 @@ The document is constantly updated in real-time, with changes being reflected in
 
 /collabwrite <br>
   /client <br>
-    ├── public/ <br>
+    &nbsp; ├── public/ <br>
     └── src/ <br>
-        ├── App.js           # Main React component  <br>
-        ├── TextEditor.js     # Component for the text editor <br>
-        └── index.js          # React entry point <br>
+     &nbsp;&nbsp;   ├── App.js           # Main React component  <br>
+      &nbsp;&nbsp;  ├── TextEditor.js     # Component for the text editor <br>
+       &nbsp;&nbsp; └── index.js          # React entry point <br>
   /server <br>
     ├── Document.js          # Mongoose model for documents <br>
     ├── server.js            # Express server and Socket.IO setup <br>
