@@ -116,12 +116,27 @@ load-document: Sends the document data to the client.
 send-changes: Sends document changes to the server.
 receive-changes: Broadcasts document changes to other users.
 save-document: Saves the document data to the database.
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/your-feature).
-Create a new Pull Request.
+
+
+## 🤝Contributing
+
+I welcome contributions! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+1. Fork the repository. 🍴
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature/YourFeature
+3. Commit your changes: 💻
+   ```bash
+   git commit -m 'Add some feature'
+4. Push to the branch: 🚀
+   ```bash
+   git push origin feature/YourFeature
+5. Open a pull request. 🔍
+
+## Programmer
+This project is coded by *Shobhit Singh*
+
 
 
 License
