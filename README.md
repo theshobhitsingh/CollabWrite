@@ -106,10 +106,11 @@ The document is constantly updated in real-time, with changes being reflected in
   /package.json               # Project dependencies <br>
 
 ## API Routes
-GET /documents/
-: Fetches the document data by ID.
-POST /documents/
-/save: Saves the document data to the database.
+
+GET /documents/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fetches the document data by ID.<br>
+POST /documents/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/save: Saves the document data to the database.
 Socket.IO Events
 get-document: Requests the current document data.
 load-document: Sends the document data to the client.
