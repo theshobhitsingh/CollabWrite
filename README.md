@@ -55,3 +55,10 @@ npm install
 
 4. MongoDB Setup
 Make sure you have MongoDB running either locally or remotely. Update the MongoDB connection string in the backend (server.js):
+
+mongoose.connect("mongodb://localhost/collabwrite", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
+
