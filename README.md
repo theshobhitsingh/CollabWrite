@@ -72,7 +72,6 @@ You can change this URL to point to your MongoDB instance if it's hosted elsewhe
 ## How It Works ?
 
 ### Frontend
-
 The frontend is built with React and uses React Router to manage routes. The App.js component is the main entry point, which handles routing and rendering the text editor.
 
 =) When a user first navigates to the app, they are redirected to a unique document, generated with UUID (via uuidV4()). <br>
@@ -81,7 +80,6 @@ The frontend is built with React and uses React Router to manage routes. The App
 =) The document content is automatically saved to the server every 2 seconds to prevent data loss. <br>
 
 ### Backend
-
 The backend uses Express.js and Socket.IO to provide real-time communication and persist documents in MongoDB. 
 
 =) MongoDB stores documents by their unique ID. <br>
