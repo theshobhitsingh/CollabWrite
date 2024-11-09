@@ -40,4 +40,4 @@ npm install
 ```
 
 2. Start the server: npm start
-
+The backend will start on http://localhost:5000.
