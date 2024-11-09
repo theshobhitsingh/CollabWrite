@@ -110,13 +110,14 @@ The document is constantly updated in real-time, with changes being reflected in
 GET /documents/ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fetches the document data by ID.<br>
 POST /documents/ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/save: Saves the document data to the database.
-Socket.IO Events
-get-document: Requests the current document data.
-load-document: Sends the document data to the client.
-send-changes: Sends document changes to the server.
-receive-changes: Broadcasts document changes to other users.
-save-document: Saves the document data to the database.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/save: Saves the document data to the database. <br>
+
+## Socket.IO Events
+**get-document:** Requests the current document data. <br>
+**load-document:** Sends the document data to the client. <br>
+**send-changes:** Sends document changes to the server. <br>
+**receive-changes:** Broadcasts document changes to other users. <br>
+**save-document:** Saves the document data to the database. <br>
 
 
 ## Contributing
