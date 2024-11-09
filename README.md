@@ -83,3 +83,16 @@ The document is periodically saved to the database via the save-document event.
 Real-time Collaboration
 Socket.IO is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document.
 The document is constantly updated in real-time, with changes being reflected instantly across all connected clients.
+
+## File Structure
+/collabwrite
+  /client
+    ├── public/
+    └── src/
+        ├── App.js           # Main React component
+        ├── TextEditor.js     # Component for the text editor
+        └── index.js          # React entry point
+  /server
+    ├── Document.js          # Mongoose model for documents
+    ├── server.js            # Express server and Socket.IO setup
+  /package.json               # Project dependencies
