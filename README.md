@@ -92,18 +92,18 @@ The backend uses Express.js and Socket.IO to provide real-time communication and
 The document is constantly updated in real-time, with changes being reflected instantly across all connected clients.
 
 ## File Structure
-/collabwrite
-  /client
-    ├── public/
-    └── src/
-        ├── App.js           # Main React component
-        ├── TextEditor.js     # Component for the text editor
-        └── index.js          # React entry point
-  /server
-    ├── Document.js          # Mongoose model for documents
-    ├── server.js            # Express server and Socket.IO setup
-  /package.json               # Project dependencies
 
+/collabwrite <br>
+  /client <br>
+    ├── public/ <br>
+    └── src/ <br>
+        ├── App.js           # Main React component  <br>
+        ├── TextEditor.js     # Component for the text editor <br>
+        └── index.js          # React entry point <br>
+  /server <br>
+    ├── Document.js          # Mongoose model for documents <br>
+    ├── server.js            # Express server and Socket.IO setup <br>
+  /package.json               # Project dependencies <br>
 
 ## API Routes
 GET /documents/
