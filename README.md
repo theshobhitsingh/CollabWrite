@@ -31,4 +31,13 @@ git clone https://github.com/yourusername/collabwrite.git
 cd collabwrite
 ```
 ### 2. Set up the backend
-Navigate to the backend directory and install dependencies:
+
+1. Navigate to the backend directory and install dependencies:
+
+```bash
+cd server
+npm install
+```
+
+2. Start the server: npm start
+
