@@ -142,7 +142,7 @@ This project is coded by *Shobhit Singh*
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
-Quill.js - A powerful rich text editor.
-Socket.IO - For enabling real-time web communication.
-MongoDB - NoSQL database for storing document data
+## Acknowledgements
+**Quill.js** - A powerful rich text editor. <br>
+**Socket.IO** - For enabling real-time web communication. <br>
+**MongoDB**- NoSQL database for storing document data <br>
