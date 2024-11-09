@@ -60,5 +60,5 @@ mongoose.connect("mongodb://localhost/collabwrite", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-
+You can change this URL to point to your MongoDB instance if it's hosted elsewhere.
 
