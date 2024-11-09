@@ -115,3 +115,11 @@ Create a new branch (git checkout -b feature/your-feature).
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature/your-feature).
 Create a new Pull Request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+Quill.js - A powerful rich text editor.
+Socket.IO - For enabling real-time web communication.
+MongoDB - NoSQL database for storing document data
