@@ -68,12 +68,13 @@ You can change this URL to point to your MongoDB instance if it's hosted elsewhe
 ## How It Works ?
 
 ### Frontend
+
 The frontend is built with React and uses React Router to manage routes. The App.js component is the main entry point, which handles routing and rendering the text editor.
 
-When a user first navigates to the app, they are redirected to a unique document, generated with UUID (via uuidV4()).
-The TextEditor component is responsible for loading the document and enabling the collaborative editing experience.
-The Quill.js editor is used for text input, with a toolbar offering basic text formatting options.
-The document content is automatically saved to the server every 2 seconds to prevent data loss.
+=) When a user first navigates to the app, they are redirected to a unique document, generated with UUID (via uuidV4()).
+=) The TextEditor component is responsible for loading the document and enabling the collaborative editing experience.
+=) The Quill.js editor is used for text input, with a toolbar offering basic text formatting options.
+=) The document content is automatically saved to the server every 2 seconds to prevent data loss.
 
 ### Backend
 The backend uses Express.js and Socket.IO to provide real-time communication and persist documents in MongoDB.
