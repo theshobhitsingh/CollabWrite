@@ -88,7 +88,7 @@ The backend uses Express.js and Socket.IO to provide real-time communication and
 
 ### Real-time Collaboration
 
-**Socket.IO** is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document.
+**Socket.IO** is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document.  <br>
 The document is constantly updated in real-time, with changes being reflected instantly across all connected clients.
 
 ## File Structure
