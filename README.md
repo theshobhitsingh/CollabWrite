@@ -44,3 +44,8 @@ The backend will start on http://localhost:5000.
 
 ### 3. Set up the frontend
 Navigate to the frontend directory and install dependencies:
+
+```bash
+cd client
+npm install
+```
