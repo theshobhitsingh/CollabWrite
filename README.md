@@ -29,3 +29,6 @@
 ```bash
 git clone https://github.com/yourusername/collabwrite.git
 cd collabwrite
+```
+### 2. Set up the backend
+Navigate to the backend directory and install dependencies:
