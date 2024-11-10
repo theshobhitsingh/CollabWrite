@@ -1,3 +1,4 @@
+
 # CollabWrite: Real-Time Collaborative Writing Tool
 
 **CollabWrite** is a web-based application that allows multiple users to collaborate on documents in real time. The application uses **React** for the front end, **Express** for the backend, **MongoDB** for data storage, and **Socket.IO** for real-time updates.
