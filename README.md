@@ -1,6 +1,6 @@
 # CollabWrite: Real-Time Collaborative Writing Tool
 
-**CollabWrite** is a web-based application that allows multiple users to collaborate on documents in real-time. The application uses **React** for the frontend, **Express** for the backend, **MongoDB** for data storage, and **Socket.IO** for real-time updates.
+**CollabWrite** is a web-based application that allows multiple users to collaborate on documents in real time. The application uses **React** for the front end, **Express** for the backend, **MongoDB** for data storage, and **Socket.IO** for real-time updates.
 
 ## Features
 
@@ -68,13 +68,13 @@ mongoose.connect("mongodb://localhost/collabwrite", {
 })
 ```
 
-You can change this URL to point to your MongoDB instance if it's hosted elsewhere.
+***You can change this URL to point to your MongoDB instance if it's hosted elsewhere.***
 
-## How It Works ?
+## How It Works?
 
 ### Frontend
 
-The frontend is built with React and uses React Router to manage routes. The App.js component is the main entry point, which handles routing and rendering the text editor.
+The front-end is built with React and uses React Router to manage routes. The App.js component is the main entry point, which handles routing and rendering the text editor.
 
 =) When a user first navigates to the app, they are redirected to a unique document, generated with UUID (via uuidV4()). <br>
 =) The TextEditor component is responsible for loading the document and enabling the collaborative editing experience. <br>
@@ -85,7 +85,7 @@ The frontend is built with React and uses React Router to manage routes. The App
 
 The backend uses Express.js and Socket.IO to provide real-time communication and persist documents in MongoDB.
 
-=) MongoDB stores documents by their unique ID. <br>
+=) MongoDB stores documents using their unique ID. <br>
 =) Socket.IO allows real-time collaboration by emitting and receiving text changes (send-changes and receive-changes events). <br>
 =) When a user loads a document, the backend sends the document data through the load-document event. <br>
 =) Real-time changes are broadcast to other users via the receive-changes event. <br>
@@ -93,7 +93,7 @@ The backend uses Express.js and Socket.IO to provide real-time communication and
 
 ### Real-time Collaboration
 
-**Socket.IO** is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document. <br>
+**Socket.IO** is used to handle real-time communication. When one user changes the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document. <br>
 The document is constantly updated in real-time, with changes being reflected instantly across all connected clients.
 
 ## File Structure
@@ -149,7 +149,7 @@ I welcome contributions! If you'd like to contribute to this project, please for
 ## Acknowledgements
 
 **Quill.js** - A powerful rich text editor. <br>
-**Socket.IO** - For enabling real-time web communication. <br>
+**Socket.IO** - To enable real-time web communication. <br>
 **MongoDB**- NoSQL database for storing document data <br>
 
 ## Programmer
