@@ -41,9 +41,10 @@ npm install
 ```
 
 2. Start the server: npm start
-The backend will start on http://localhost:5000.
+   The backend will start on http://localhost:5000.
 
 ### 3. Set up the frontend
+
 Navigate to the frontend directory and install dependencies:
 
 ```bash
@@ -55,10 +56,11 @@ npm install
 
 4. The frontend will start on http://localhost:5173.
 
-4. MongoDB Setup
-Make sure you have MongoDB running either locally or remotely. Update the MongoDB connection string in the backend (server.js):
+5. MongoDB Setup
+   Make sure you have MongoDB running either locally or remotely. Update the MongoDB connection string in the backend (server.js):
 
 javascript
+
 ```
 mongoose.connect("mongodb://localhost/collabwrite", {
   useNewUrlParser: true,
@@ -66,12 +68,12 @@ mongoose.connect("mongodb://localhost/collabwrite", {
 })
 ```
 
-
 You can change this URL to point to your MongoDB instance if it's hosted elsewhere.
 
 ## How It Works ?
 
 ### Frontend
+
 The frontend is built with React and uses React Router to manage routes. The App.js component is the main entry point, which handles routing and rendering the text editor.
 
 =) When a user first navigates to the app, they are redirected to a unique document, generated with UUID (via uuidV4()). <br>
@@ -80,7 +82,8 @@ The frontend is built with React and uses React Router to manage routes. The App
 =) The document content is automatically saved to the server every 2 seconds to prevent data loss. <br>
 
 ### Backend
-The backend uses Express.js and Socket.IO to provide real-time communication and persist documents in MongoDB. 
+
+The backend uses Express.js and Socket.IO to provide real-time communication and persist documents in MongoDB.
 
 =) MongoDB stores documents by their unique ID. <br>
 =) Socket.IO allows real-time collaboration by emitting and receiving text changes (send-changes and receive-changes events). <br>
@@ -90,22 +93,22 @@ The backend uses Express.js and Socket.IO to provide real-time communication and
 
 ### Real-time Collaboration
 
-**Socket.IO** is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document.  <br>
+**Socket.IO** is used to handle real-time communication. When one user makes a change to the document, that change is sent to the server, which broadcasts the change to other users currently editing the same document. <br>
 The document is constantly updated in real-time, with changes being reflected instantly across all connected clients.
 
 ## File Structure
 
 /collabwrite <br>
 &nbsp;/client <br>
-    &nbsp; ├── public/ <br>
-    &nbsp;&nbsp;└── src/ <br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── App.js           # Main React component  <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── TextEditor.js     # Component for the text editor <br>
-       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.js          # React entry point <br>
-  &nbsp;/server <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Document.js          # Mongoose model for documents <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── server.js            # Express server and Socket.IO setup <br>
-  /package.json               # Project dependencies <br>
+&nbsp; ├── public/ <br>
+&nbsp;&nbsp;└── src/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── App.js # Main React component <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── TextEditor.js # Component for the text editor <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.js # React entry point <br>
+&nbsp;/server <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Document.js # Mongoose model for documents <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── server.js # Express server and Socket.IO setup <br>
+/package.json # Project dependencies <br>
 
 ## API Routes
 
@@ -115,12 +118,12 @@ POST /documents/ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/save: Saves the document data to the database. <br>
 
 ## Socket.IO Events
+
 **get-document:** Requests the current document data. <br>
 **load-document:** Sends the document data to the client. <br>
 **send-changes:** Sends document changes to the server. <br>
 **receive-changes:** Broadcasts document changes to other users. <br>
 **save-document:** Saves the document data to the database. <br>
-
 
 ## Contributing
 
@@ -130,20 +133,24 @@ I welcome contributions! If you'd like to contribute to this project, please for
 2. Create a new branch for your feature:
    ```bash
    git checkout -b feature/YourFeature
+   ```
 3. Commit your changes:
    ```bash
    git commit -m 'Add some feature'
+   ```
 4. Push to the branch:
    ```bash
    git push origin feature/YourFeature
-   
+
+   ```
 5. Create a pull request.
 
 ## Acknowledgements
+
 **Quill.js** - A powerful rich text editor. <br>
 **Socket.IO** - For enabling real-time web communication. <br>
 **MongoDB**- NoSQL database for storing document data <br>
 
-
 ## Programmer
-This project is developed by me *Shobhit Singh*
+
+This project is developed by me _Shobhit Singh_
