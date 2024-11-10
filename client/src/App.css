@@ -1,0 +1,105 @@
+body {
+  background: #2f2f2f;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.app-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.app-header {
+  margin-bottom: 30px;
+}
+
+.app-title {
+  font-family: "Creepster", sans-serif;
+  font-size: 4.5rem;
+  color: #189bb8;
+  text-shadow: 0 0 10px rgba(30, 58, 138, 0.8), 0 0 20px rgba(30, 58, 138, 0.6),
+    0 0 30px rgba(30, 58, 138, 0.4);
+  margin-bottom: 10px;
+}
+
+.app-subtitle {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.ql-container {
+  min-height: 1000px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #f5f5f5;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.ql-toolbar {
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ql-toolbar button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ql-toolbar button:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(30, 58, 138, 0.6);
+}
+
+.ql-toolbar select {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.ql-toolbar select:hover {
+  background-color: #1e3a8a;
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.5);
+}
+
+.ql-editor {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px;
+  color: #f5f5f5;
+  background-color: #333;
+}
+
+.ql-editor.ql-blank::before {
+  color: #888;
+  content: "Start typing...";
+  font-style: italic;
+  font-size: 18px;
+}
+
+.ql-editor:focus {
+  border: 2px solid #1e3a8a;
+  box-shadow: 0 4px 16px rgba(30, 58, 138, 0.5);
+}
